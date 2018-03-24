@@ -7,7 +7,7 @@
 
     <import resource="dao-context.xml"/>
 
-    <context:component-scan base-package="by.bsuir.em"/>
+    <context:component-scan base-package="by.riomedia.batya"/>
 
     <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
         <property name="locations">
