@@ -110,7 +110,7 @@ OIDS = FALSE
 )
 ;
 
-CREATE TABLE public.br_serivce_price_cell
+CREATE TABLE public.br_service_price_cell
 (
   id bigserial NOT NULL,
   service_column_id bigint NOT NULL,
