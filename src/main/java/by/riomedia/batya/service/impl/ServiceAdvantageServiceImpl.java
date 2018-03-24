@@ -4,11 +4,12 @@ import by.riomedia.batya.dao.ServiceAdvantageDAO;
 import by.riomedia.batya.entity.ServiceAdvantage;
 import by.riomedia.batya.service.ServiceAdvantageService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-@org.springframework.stereotype.Service
+@Service
 @Transactional
 public class ServiceAdvantageServiceImpl implements ServiceAdvantageService {
 
