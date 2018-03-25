@@ -13,6 +13,10 @@ public class ServicePriceColumn {
     private Long id;
     @Column(name = "name")
     private String name;
+    @Column(name = "attribute_name")
+    private String attributeName;
+    @Column(name = "order_number")
+    private Integer orderNumber;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "service_id")
@@ -34,6 +38,22 @@ public class ServicePriceColumn {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getAttributeName() {
+        return attributeName;
+    }
+
+    public void setAttributeName(String attributeName) {
+        this.attributeName = attributeName;
+    }
+
+    public Integer getOrderNumber() {
+        return orderNumber;
+    }
+
+    public void setOrderNumber(Integer orderNumber) {
+        this.orderNumber = orderNumber;
     }
 
     public Service getService() {

@@ -102,6 +102,8 @@ CREATE TABLE public.br_service_price_column
   id bigserial NOT NULL,
   service_id bigint NOT NULL,
   name character varying(100) NOT NULL,
+  order_number integer NOT NULL,
+  attribute_name character varying(100) NOT NULL,
   CONSTRAINT pk_service_price_column_pk PRIMARY KEY (id),
   CONSTRAINT br_service_price_column_fk FOREIGN KEY (service_id) REFERENCES public.br_service (id) ON UPDATE NO ACTION ON DELETE NO ACTION
 )
